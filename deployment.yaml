@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: springapp
   labels:
-    app: springapp
+    app: spring
 spec:
   containers:
   - name: springcontainer
@@ -18,7 +18,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: springapp
+    app: spring
   ports:
   - port: 80
     targetPort: 8080
